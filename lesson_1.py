@@ -197,5 +197,15 @@
 #for k, q in telefonlar.items():
 #    print(f'{k.title()} ning telefoni {q}')
 maxsulotlar = {
-    'anor': '20000'
+    'anor': '20000',
+    'olma': '25000',
+    'uzum': '14000',
+    'sabzi': '5000'
 }
+#print(maxsulotlar.keys())
+
+
+print('Dokondagi maxsulotlar: ')
+
+for maxsulot in maxsulotlar.keys():
+    print(maxsulot.title())
