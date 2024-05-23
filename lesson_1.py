@@ -187,12 +187,13 @@
 #    print(f'Mashinaning {k}si {v}')
 
 
-#telefonlar = {
-#    'olim': 'galaxys9',
-#    'sardor':'iphone X',
-#    'aliy': 's 24 ultra',
-#    'sherzod': 'nokia 3310'
-#}
+telefonlar = {
+    'olim': 'galaxys9',
+    'sardor':'iphone X',
+    'aliy': 'galaxys9'
+            '',
+    'sherzod': 'nokia 3310'
+}
 
 #for k, q in telefonlar.items():
 #    print(f'{k.title()} ning telefoni {q}')
@@ -205,7 +206,102 @@ maxsulotlar = {
 #print(maxsulotlar.keys())
 
 
-print('Dokondagi maxsulotlar: ')
+#print('Dokondagi maxsulotlar: ')
 
-for maxsulot in maxsulotlar.keys():
-    print(maxsulot.title())
+#for maxsulot in maxsulotlar.keys():
+#    print(maxsulot.title())
+#print(maxsulotlar.values())
+
+#for tel in telefonlar.values():
+#    print(tel)
+
+lugat = {
+    'int': 'butun son',
+    'float': 'kasir son',
+    'keys': 'kalitlar',
+    'value': 'qiymat'
+}
+#for k, q in sorted(lugat.items()):
+#    print(f"{k.title()}   {q.title()}")
+
+davlatlar = {
+    'ozbekiston': 'toshkent',
+    'rossia': 'moskva',
+    'turkia': 'istanbul',
+    'falastin': 'quddus',
+    'qozogiston': 'almata'
+}
+#for kalit, qiymat in sorted(davlatlar.items()):
+#    print(f"{kalit.title()}ning poytaxti {qiymat.title()}")
+
+menu = {
+    "vaju": 15000,
+    "mastava": 10000,
+    "tushonka": 40000,
+    "osh": 12000,
+    "kabob": 18000,
+    "lagmon": 23000,
+    "manti": 5000,
+    "salat": 7000,
+    "choy": 3000
+
+}
+
+#klent =  str(input("istalgan taomni kiriting: "))
+
+#for taom, narx in menu:
+#    if klent not in menu:
+#        print("Bizda bunday taom yo'q")
+#    print(f"{taom} narxi {narx}")
+
+#print("istalgan 3ta taomni kiriting")
+
+#buyurtmalar =[]
+
+#for b in range(3):
+#    buyurtmalar.append(input(f"{b+1} - taom: ").lower())
+#for buyurtma in buyurtmalar:
+#    if buyurtma in menu:
+#        print(f"{buyurtma.title()} {menu[buyurtma]} som")
+#    else:
+#        print(f"kechirasz bizda {buyurtma} yo'q")
+
+#print("Istalgan 3 ta davlatni kiriting")
+
+#sayohatlar = []
+
+#for s in range(3):
+#    sayohatlar.append(input(f"{s+1} - davlat: ").lower())
+#for sayohat in sayohatlar:
+#    if sayohat in davlatlar:
+#        print(f"{sayohat.title()} ning poytaxti {davlatlar[sayohat]} bo'ladi")
+#    else:
+#        print(f" bizning tourda {sayohat} yo'q")
+
+
+dokon ={
+    'atvot': 2000,
+    'poltvot': 5000,
+    'troynik': 8000,
+    'mufta': 1000,
+    'adaptor': 20000,
+    'ushka': 18000,
+    'dushavoy': 100100,
+    'mator': 200200
+}
+
+spiskalar = []
+
+print("sizga nima masulot kerak: ")
+
+for m in range(5):
+    spiskalar.append(input(f"{m+1} - maxsulot: ").lower())
+
+for spiska in spiskalar:
+    if spiska in dokon:
+         print(f"{spiska.title()} ning narxi {dokon[spiska]}som")
+    else:
+         print(f" bizda bunday {spiska}  yo'q")
+
+
+print("haridingiz uchun raxmat")
